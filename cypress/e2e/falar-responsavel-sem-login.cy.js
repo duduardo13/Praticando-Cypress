@@ -14,13 +14,9 @@ describe('Falar com responsável sem login', () => {
       /* Verificando url - login */
       cy.url('eq', 'https://adopet-frontend-cypress.vercel.app/login')
 
-      /*logando corretamente*/
-      cy.get('[data-test="input-loginEmail"]').type('eduardofontes430@gmail.com');
-      cy.get('[data-test="input-loginPassword"]').type('Edu123');
-
-      /*Clicando no botão*/
-      cy.get('[data-test="submit-button"]').click();
-
+      /*Realizando login*/
+      cy.login('eduardofontes430@gmail.com', 'Edu123')
+      
       /* Verificando url - home */
       cy.url('eq', 'https://adopet-frontend-cypress.vercel.app/home')
 
