@@ -10,14 +10,19 @@ describe('Página cadastro', () => {
  })
  
   it('Deve realizar o cadastro corretamente no site adopet', () => {
-    /*Preenchendo campos com dados fictícios*/
-    cy.get('[data-test="input-name"]').type('Eduardo Barbosa');
-    cy.get('[data-test="input-email"]').type('eduardo@email.com');
-    cy.get('[data-test="input-password"]').type('Edu123');
-    cy.get('[data-test="input-confirm-password"]').type('Edu123');
-
-    /*cadastrando*/
-
-    cy.get('[data-test="submit-button"]').click();
+    
+    cy.cadastrar('Gustavo', 'gustavo.brito@modalgr.io', 'Gustavo123', 'Gustavo123');
     })
 })
+
+/*
+
+--------------------------Metodo antigo de cadastro-----------------------------
+cy.get('[data-test="input-name"]').type('Eduardo Barbosa');
+cy.get('[data-test="input-email"]').type('eduardo@email.com');
+cy.get('[data-test="input-password"]').type('Edu123');
+cy.get('[data-test="input-confirm-password"]').type('Edu123');
+
+cy.get('[data-test="submit-button"]').click();
+
+*/
