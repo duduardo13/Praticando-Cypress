@@ -17,10 +17,15 @@ describe('Verificando elementos na home', ()=>{
 
    })
 
-   it('Deve verificar há texto " " ', ()=>{
+   it('Deve verificar há texto "Adotar pode mudar..." ', ()=>{
           
-    cy.contains('p', 'Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!')
-    .should('be.visible');
+        cy.contains('p', 'Adotar pode mudar uma vida. Que tal buscar seu novo melhor amigo hoje? Vem com a gente!')
+        .should('be.visible');
+
+})
+    it('Deve verificar se as imagens dos pets estão aparecendo', ()=>{
+        cy.visit('https://adopet-frontend-cypress.vercel.app/home');       
+        cy.get('.card').should('be.visible');
 
 })
 })
