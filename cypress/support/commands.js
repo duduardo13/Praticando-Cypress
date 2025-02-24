@@ -1,3 +1,14 @@
+Cypress.Commands.add('login', (email, senha) => { 
+    
+      /*Preenchendo campos*/
+      cy.get('[data-test="input-loginEmail"]').type(email);
+      cy.get('[data-test="input-loginPassword"]').type(senha);
+  
+      /*Clicando no botão*/
+      cy.get('[data-test="submit-button"]').click();
+
+ })
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
