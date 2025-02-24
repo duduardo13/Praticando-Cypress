@@ -1,11 +1,15 @@
 describe('Página cadastro', () => {
-  it('Deve realizar o cadastro corretamente no site adopet', () => {
+  
+  beforeEach(() =>{
     /*Visitando Site*/
     cy.visit('https://adopet-frontend-cypress.vercel.app/');
 
     /*Clicando em cadastrar*/
     cy.get('[data-test="register-button"]').click();
 
+ })
+ 
+  it('Deve realizar o cadastro corretamente no site adopet', () => {
     /*Preenchendo campos com dados fictícios*/
     cy.get('[data-test="input-name"]').type('Eduardo Barbosa');
     cy.get('[data-test="input-email"]').type('eduardo@email.com');

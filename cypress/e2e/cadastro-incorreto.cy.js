@@ -1,13 +1,18 @@
 describe('Página cadastro', () => {
-    it('Deve realizar o cadastro incorreto no site adopet', () => {
-      /*Visitando Site*/
-      cy.visit('https://adopet-frontend-cypress.vercel.app/');
   
-      /*Clicando em cadastrar*/
-      cy.get('[data-test="register-button"]').click();
+  beforeEach(() =>{
+    /*Visitando Site*/
+    cy.visit('https://adopet-frontend-cypress.vercel.app/');
 
+    /*Clicando em cadastrar*/
+    cy.get('[data-test="register-button"]').click();
+
+ })  
   
-      /*Clicando o botão de cadastro*/
+  
+  it('Deve realizar o cadastro incorreto no site adopet', () => {
+      
+    /*Clicando o botão de cadastro*/
   
       cy.get('[data-test="submit-button"]').click();
 
