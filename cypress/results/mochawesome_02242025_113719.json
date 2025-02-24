@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-02-24T14:37:14.650Z",
+    "end": "2025-02-24T14:37:19.720Z",
+    "duration": 5070,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "005ea907-30d5-439e-93d1-7bce6a2da7f9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\falar-responsavel.cy.js",
+      "file": "cypress\\e2e\\falar-responsavel.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e6c69587-5f84-431a-ac17-5bc2fce60a01",
+          "title": "Falar com responsável sem login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve clicar em falar com responsável",
+              "fullTitle": "Falar com responsável sem login Deve clicar em falar com responsável",
+              "timedOut": null,
+              "duration": 2671,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "/*Clicando no icone de falar com responsavel*/\ncy.get('.header__message').click();\ncy.url('eq', 'https://adopet-frontend-cypress.vercel.app/mensagem');",
+              "err": {},
+              "uuid": "676c6005-bd95-4927-9173-ee6888e03cc0",
+              "parentUUID": "e6c69587-5f84-431a-ac17-5bc2fce60a01",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "676c6005-bd95-4927-9173-ee6888e03cc0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2671,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
