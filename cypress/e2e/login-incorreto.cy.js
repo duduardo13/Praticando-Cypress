@@ -24,7 +24,7 @@ describe('Falha no login', () => {
         cy.contains('Falha no login. Consulte suas credenciais.').should('be.visible')
     })
   
-    it('Credenciais inválidas', ()=>{
+    it('Credenciais que não cumprem com os requisitos', ()=>{
     
         /*Preenchendo campos*/
         cy.get('[data-test="input-loginEmail"]').type('aleatosudomde');
